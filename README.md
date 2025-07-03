@@ -9,28 +9,19 @@ Host machine: [Your OS]
 Virtualization: Oracle VirtualBox
 
 VMs:
-
 Ubuntu Server (DNS & DHCP server)
-
 Kali Linux (Client machine for testing)
 
 Steps Performed
 1. Ubuntu Server Preparation
-Installed Ubuntu Server in VirtualBox with network adapter set to Internal Network.
-
-Configured static IP for Ubuntu Server (e.g., 192.168.56.10).
-
-Installed and configured BIND9 DNS server.
-
-Created forward and reverse DNS zone files for domain lab.local.
-
-Configured BIND9 zone files with appropriate A and PTR records.
-
-Incremented zone serial numbers after each modification.
-
-Restarted BIND9 service and validated DNS configuration using named-checkzone.
-
-Tested DNS resolution from Ubuntu Server itself.
+- Installed Ubuntu Server in VirtualBox with network adapter set to Internal Network.
+- Configured static IP for Ubuntu Server (e.g., 192.168.56.10).
+- Installed and configured BIND9 DNS server.
+- Created forward and reverse DNS zone files for domain lab.local.
+- Configured BIND9 zone files with appropriate A and PTR records.
+- Incremented zone serial numbers after each modification.
+- Restarted BIND9 service and validated DNS configuration using named-checkzone.
+- Tested DNS resolution from Ubuntu Server itself.
 
 2. DHCP Server Setup on Ubuntu
 Installed and configured ISC DHCP Server.
