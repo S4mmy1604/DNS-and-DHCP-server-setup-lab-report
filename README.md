@@ -39,37 +39,25 @@ Steps Performed
 - Confirmed forward and reverse DNS resolution.
 
 Troubleshooting and Fixes
-Reset and corrected DNS zone records to match dynamic IP assigned by DHCP.
-
-Incremented DNS zone serial numbers on every zone file change to propagate updates.
-
-Resolved network interface issues by matching VirtualBox network adapter settings on both VMs.
-
-Addressed Kali Linux missing DHCP client tools by leveraging system defaults and rebooting.
+- Reset and corrected DNS zone records to match dynamic IP assigned by DHCP.
+- Incremented DNS zone serial numbers on every zone file change to propagate updates.
+- Resolved network interface issues by matching VirtualBox network adapter settings on both VMs.
+- Addressed Kali Linux missing DHCP client tools by leveraging system defaults and rebooting.
 
 Learnings and Notes
-DNS and DHCP must be configured carefully with matching IP ranges and hostnames.
-
-BIND9 requires zone files to have properly formatted forward and reverse zones.
-
-DHCP server must be authoritative for the subnet to assign IPs correctly.
-
-Kali Linux uses continuous ping by default; use -c to limit packets.
-
-Restarting networking services and VMs helps apply network configuration changes.
-
-Understanding network interface names and VirtualBox network modes is crucial for inter-VM communication.
+- DNS and DHCP must be configured carefully with matching IP ranges and hostnames.
+- BIND9 requires zone files to have properly formatted forward and reverse zones.
+- DHCP server must be authoritative for the subnet to assign IPs correctly.
+- Kali Linux uses continuous ping by default; use -c to limit packets.
+- Restarting networking services and VMs helps apply network configuration changes.
+- Understanding network interface names and VirtualBox network modes is crucial for inter-VM communication.
 
 Next Steps
-Monitor and analyze DNS and DHCP traffic using Wireshark.
-
-Configure logging for DNS and DHCP servers.
-
-Explore DNS security features such as DNSSEC.
-
-Simulate network attacks and defenses in the lab.
-
-Expand lab with more VMs and services.
+- Monitor and analyze DNS and DHCP traffic using Wireshark.
+- Configure logging for DNS and DHCP servers.
+- Explore DNS security features such as DNSSEC.
+- Simulate network attacks and defenses in the lab.
+- Expand lab with more VMs and services.
 
 Commands Reference
 BIND9 commands
