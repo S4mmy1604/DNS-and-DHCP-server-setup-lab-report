@@ -24,28 +24,19 @@ Steps Performed
 - Tested DNS resolution from Ubuntu Server itself.
 
 2. DHCP Server Setup on Ubuntu
-Installed and configured ISC DHCP Server.
-
-Configured DHCP to serve IP range 192.168.56.20 - 192.168.56.30.
-
-Set DHCP options including routers (gateway) and DNS server address.
-
-Enabled DHCP server on the correct network interface.
-
-Restarted and verified DHCP server status.
+- Installed and configured ISC DHCP Server.
+- Configured DHCP to serve IP range 192.168.56.20 - 192.168.56.30.
+- Set DHCP options including routers (gateway) and DNS server address.
+- Enabled DHCP server on the correct network interface.
+- Restarted and verified DHCP server status.
 
 3. Kali Linux Client Configuration
-Configured Kali network adapter to the same Internal Network as Ubuntu.
-
-Obtained IP address dynamically via DHCP from Ubuntu Server.
-
-Verified IP assignment with ip a.
-
-Tested network connectivity to Ubuntu Server using ping.
-
-Performed DNS lookups against the Ubuntu BIND DNS server.
-
-Confirmed forward and reverse DNS resolution.
+- Configured Kali network adapter to the same Internal Network as Ubuntu.
+- Obtained IP address dynamically via DHCP from Ubuntu Server.
+- Verified IP assignment with ip a.
+- Tested network connectivity to Ubuntu Server using ping.
+- Performed DNS lookups against the Ubuntu BIND DNS server.
+- Confirmed forward and reverse DNS resolution.
 
 Troubleshooting and Fixes
 Reset and corrected DNS zone records to match dynamic IP assigned by DHCP.
